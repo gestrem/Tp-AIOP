@@ -35,6 +35,9 @@ public class HelloServlet extends HttpServlet {
 		PrintWriter out=response.getWriter();
 		String name =request.getParameter("name");
 	    RequestDispatcher dispatcher =  request.getRequestDispatcher("hello.jsp");
+
+	    String message="Tente ta chance ! :)";
+        request.setAttribute("message", message);
 	    dispatcher.forward( request, response ); /*
 		out.println("<!DOCTYPE html!>");
 		out.println("<html><head><meta charset=\"utf-8\"/>");
@@ -56,7 +59,7 @@ public class HelloServlet extends HttpServlet {
 	    String fn= request.getParameter("first_name");
         String ln = request.getParameter("last_name");
         String message=null;
-        if ((ln.equals("Selenia")) && (fn.equals("Nathalie"))) {
+        if ((ln.equals("Marianne")) && (fn.equals("Fred"))) {
             message = "BINGO...";
         } else {
             message = "Try again";

@@ -4,17 +4,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>##</title>
+<title>Test de QI</title>
 </head>
 <body>
 
 <form  method="POST">
-First Name: <input type="text" name="first_name">
+Maman: <input type="text" name="first_name">
 <br />
-Last Name: <input type="text" name="last_name" />
+Soeur: <input type="text" name="last_name" />
 <input type="submit" value="Submit" />
 </form>
 
-<h1>Resultat form ${message}</h1>
+<h1> ${message}</h1>
 </body>
 </html>
